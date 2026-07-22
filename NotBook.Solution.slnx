@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="NotBook.APIs/NotBook.APIs.csproj" />
+  <Project Path="NotBook.Core/NotBook.Core.csproj" />
+  <Project Path="NotBook.Repository/NotBook.Repository.csproj" />
+  <Project Path="NotBook.Service/NotBook.Service.csproj" />
+</Solution>

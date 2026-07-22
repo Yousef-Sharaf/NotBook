@@ -1,0 +1,6 @@
+@NotBook.APIs_HostAddress = http://localhost:5205
+
+GET {{NotBook.APIs_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
