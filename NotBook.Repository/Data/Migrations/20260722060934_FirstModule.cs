@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace NotBook.Repository.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialMigration : Migration
+    public partial class FirstModule : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -35,18 +35,17 @@ namespace NotBook.Repository.Data.Migrations
                     WorkMinutes = table.Column<int>(type: "int", nullable: false),
                     BreakMinutes = table.Column<int>(type: "int", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    HostUserID = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    UserHostId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                    HostUserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Sessions", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Sessions_Users_UserHostId",
-                        column: x => x.UserHostId,
+                        name: "FK_Sessions_Users_HostUserId",
+                        column: x => x.HostUserId,
                         principalTable: "Users",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -86,9 +85,9 @@ namespace NotBook.Repository.Data.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Sessions_UserHostId",
+                name: "IX_Sessions_HostUserId",
                 table: "Sessions",
-                column: "UserHostId");
+                column: "HostUserId");
         }
 
         /// <inheritdoc />

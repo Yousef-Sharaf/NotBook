@@ -34,22 +34,19 @@ namespace NotBook.Repository.Data.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("HostUserID")
+                    b.Property<Guid>("HostUserId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("UserHostId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<int>("WorkMinutes")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserHostId");
+                    b.HasIndex("HostUserId");
 
                     b.ToTable("Sessions");
                 });
@@ -106,13 +103,13 @@ namespace NotBook.Repository.Data.Migrations
 
             modelBuilder.Entity("NotBook.Core.Entities.Session", b =>
                 {
-                    b.HasOne("NotBook.Core.Entities.User", "UserHost")
+                    b.HasOne("NotBook.Core.Entities.User", "Host")
                         .WithMany("HostedSessions")
-                        .HasForeignKey("UserHostId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .HasForeignKey("HostUserId")
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.Navigation("UserHost");
+                    b.Navigation("Host");
                 });
 
             modelBuilder.Entity("NotBook.Core.Entities.SessionMember", b =>
