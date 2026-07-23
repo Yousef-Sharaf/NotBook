@@ -10,8 +10,8 @@ namespace NotBook.Core.Entities
         public int WorkMinutes { get; set; }
         public int BreakMinutes { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-        public Guid HostUserId { get; set; }
-        public User Host { get; set; } = null!;
+        public Guid UserHostId { get; set; }
+        public User UserHost { get; set; } = null!;
         public ICollection<SessionMember> Members { get; set; } = new List<SessionMember>();
     }
 }

@@ -25,9 +25,9 @@ namespace NotBook.Repository.Data
             //   1) User -> SessionMembers (direct)
             //   2) User -> Sessions (as host) -> SessionMembers
             modelBuilder.Entity<Session>()
-                .HasOne(s => s.Host)
+                .HasOne(s => s.UserHost)
                 .WithMany(u => u.HostedSessions)
-                .HasForeignKey(s => s.HostUserId)
+                .HasForeignKey(s => s.UserHostId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             // Session -> SessionMembers
@@ -45,6 +45,30 @@ namespace NotBook.Repository.Data
                 .WithMany(u => u.Memberships)
                 .HasForeignKey(sm => sm.UserId)
                 .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<SessionMember>()
+                .HasIndex(sm => new { sm.SessionId, sm.UserId })
+                .IsUnique();
+
+            modelBuilder.Entity<User>()
+                .HasIndex(u => u.Email)
+                .IsUnique();
+
+            modelBuilder.Entity<Session>()
+                .Property(s => s.Title)
+                .HasMaxLength(200);
+
+            modelBuilder.Entity<User>()
+                .Property(u => u.Name)
+                .HasMaxLength(100);
+
+            modelBuilder.Entity<User>()
+                .Property(u => u.Email)
+                .HasMaxLength(256);
+
+            modelBuilder.Entity<User>()
+                .Property(u => u.PasswordHash)
+                .HasMaxLength(512);
         }
     }
 }
