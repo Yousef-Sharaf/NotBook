@@ -1,0 +1,15 @@
+E:\Projects\GitHup\NotBook\NotBook.Solution\NotBook.Application\bin\Debug\net10.0\NotBook.Application.deps.json
+E:\Projects\GitHup\NotBook\NotBook.Solution\NotBook.Application\bin\Debug\net10.0\NotBook.Application.dll
+E:\Projects\GitHup\NotBook\NotBook.Solution\NotBook.Application\bin\Debug\net10.0\NotBook.Application.pdb
+E:\Projects\GitHup\NotBook\NotBook.Solution\NotBook.Application\obj\Debug\net10.0\NotBook.Application.csproj.AssemblyReference.cache
+E:\Projects\GitHup\NotBook\NotBook.Solution\NotBook.Application\obj\Debug\net10.0\NotBook.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\GitHup\NotBook\NotBook.Solution\NotBook.Application\obj\Debug\net10.0\NotBook.Application.AssemblyInfoInputs.cache
+E:\Projects\GitHup\NotBook\NotBook.Solution\NotBook.Application\obj\Debug\net10.0\NotBook.Application.AssemblyInfo.cs
+E:\Projects\GitHup\NotBook\NotBook.Solution\NotBook.Application\obj\Debug\net10.0\NotBook.Application.csproj.CoreCompileInputs.cache
+E:\Projects\GitHup\NotBook\NotBook.Solution\NotBook.Application\obj\Debug\net10.0\NotBook..BA83F8CD.Up2Date
+E:\Projects\GitHup\NotBook\NotBook.Solution\NotBook.Application\obj\Debug\net10.0\NotBook.Application.dll
+E:\Projects\GitHup\NotBook\NotBook.Solution\NotBook.Application\obj\Debug\net10.0\refint\NotBook.Application.dll
+E:\Projects\GitHup\NotBook\NotBook.Solution\NotBook.Application\obj\Debug\net10.0\NotBook.Application.pdb
+E:\Projects\GitHup\NotBook\NotBook.Solution\NotBook.Application\obj\Debug\net10.0\ref\NotBook.Application.dll
+E:\Projects\GitHup\NotBook\NotBook.Solution\NotBook.Application\bin\Debug\net10.0\NotBook.Domain.dll
+E:\Projects\GitHup\NotBook\NotBook.Solution\NotBook.Application\bin\Debug\net10.0\NotBook.Domain.pdb

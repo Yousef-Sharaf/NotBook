@@ -1,0 +1,56 @@
+using Microsoft.EntityFrameworkCore;
+using NotBook.Application.IRepositories;
+using NotBook.Application.IServices;
+using NotBook.Application.Services;
+using NotBook.Infrastructure.Data;
+using NotBook.Infrastructure.Repository;
+using Scalar.AspNetCore;
+namespace NotBook.APIs
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            var builder = WebApplication.CreateBuilder(args);
+
+            // Add services to the container.
+
+            builder.Services.AddControllers();
+            // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+            builder.Services.AddOpenApi();
+
+            builder.Services.AddDbContext<AppDbContext>(options =>
+            {
+                options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
+            });
+
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
+
+            builder.Services.AddScoped<ISessionRepository, SessionRepository>();
+
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
+
+            builder.Services.AddScoped<ISessionRepository, SessionRepository>();
+
+            builder.Services.AddScoped<ISessionService, SessionService>();
+
+            var app = builder.Build();
+
+            // Configure the HTTP request pipeline.
+            if (app.Environment.IsDevelopment())
+            {
+                app.MapOpenApi();
+
+                app.MapScalarApiReference();
+            }
+
+            app.UseHttpsRedirection();
+
+            app.UseAuthorization();
+
+            app.MapControllers();
+
+            app.Run();
+        }
+    }
+}

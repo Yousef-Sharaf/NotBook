@@ -1,0 +1,11 @@
+E:\Projects\GitHup\NotBook\NotBook.Solution\NotBook.Domain\bin\Debug\net10.0\NotBook.Domain.deps.json
+E:\Projects\GitHup\NotBook\NotBook.Solution\NotBook.Domain\bin\Debug\net10.0\NotBook.Domain.dll
+E:\Projects\GitHup\NotBook\NotBook.Solution\NotBook.Domain\bin\Debug\net10.0\NotBook.Domain.pdb
+E:\Projects\GitHup\NotBook\NotBook.Solution\NotBook.Domain\obj\Debug\net10.0\NotBook.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\GitHup\NotBook\NotBook.Solution\NotBook.Domain\obj\Debug\net10.0\NotBook.Domain.AssemblyInfoInputs.cache
+E:\Projects\GitHup\NotBook\NotBook.Solution\NotBook.Domain\obj\Debug\net10.0\NotBook.Domain.AssemblyInfo.cs
+E:\Projects\GitHup\NotBook\NotBook.Solution\NotBook.Domain\obj\Debug\net10.0\NotBook.Domain.csproj.CoreCompileInputs.cache
+E:\Projects\GitHup\NotBook\NotBook.Solution\NotBook.Domain\obj\Debug\net10.0\NotBook.Domain.dll
+E:\Projects\GitHup\NotBook\NotBook.Solution\NotBook.Domain\obj\Debug\net10.0\refint\NotBook.Domain.dll
+E:\Projects\GitHup\NotBook\NotBook.Solution\NotBook.Domain\obj\Debug\net10.0\NotBook.Domain.pdb
+E:\Projects\GitHup\NotBook\NotBook.Solution\NotBook.Domain\obj\Debug\net10.0\ref\NotBook.Domain.dll

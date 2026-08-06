@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="NotBook.APIs/NotBook.APIs.csproj" />
+  <Project Path="NotBook.Application/NotBook.Application.csproj" Id="0f49ecfa-5900-4950-a1b5-b858da8a9048" />
+  <Project Path="NotBook.Domain/NotBook.Domain.csproj" Id="d014bd38-5fa3-49c6-b57b-369cc7ad4134" />
+  <Project Path="NotBook.Infrastructure/NotBook.Infrastructure.csproj" Id="6a9714d9-162a-4f53-ae5b-77dc126f3568" />
+</Solution>
